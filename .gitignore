@@ -1,0 +1,47 @@
+# === Python cache ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === MacOS junk ===
+.DS_Store
+
+# === Virtual environments ===
+venv/
+env/
+ENV/
+.venv/
+
+# === Data & Datasets ===
+data/
+datasets/
+*.zip
+*.tar.gz
+*.tgz
+*.h5
+*.npz
+*.npy
+*.pkl
+*.pt
+*.pth
+*.ckpt
+
+# === Model Checkpoints ===
+checkpoints/
+*.hdf5
+
+# === TensorBoard logs ===
+logs/
+
+# === VS Code ===
+.vscode/
+
+# === Others ===
+*.swp
+*.bak
+*.tmp
+*.log
