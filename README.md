@@ -457,3 +457,67 @@ Just say the word and I’ll guide you step-by-step!
 | **Fashion-MNIST**              | Clothing category recognition      | 28x28 grayscale          | ✔️ TF + PyTorch                          |
 | **CelebA**                     | Face attributes (multi-label)      | RGB face images          | ✔️ PyTorch datasets                      |
 | **Custom folder of JPGs/PNGs** | Any task                           | JPG/PNG in class folders | ✔️ via ImageDataGenerator or ImageFolder |
+
+FORCE RESET GIT REPO HISTORY 
+
+## 2. How to remove **all git commit history** (reset your repo history)
+
+If you want to **wipe the entire Git history and start fresh** with your current files (i.e., keep files but lose all previous commits), here’s how:
+
+### Step-by-step:
+
+1. Make sure you’re in your project folder:
+
+```bash
+cd path/to/MY-COMPUTER-VISION
+```
+
+2. Remove the old Git history (this deletes the `.git` folder):
+
+```bash
+rm -rf .git
+```
+
+3. Re-initialize a new Git repo:
+
+```bash
+git init
+```
+
+4. Add all current files and commit:
+
+```bash
+git add .
+git commit -m "Initial commit - reset history"
+```
+
+5. Link to your GitHub repo (replace URL):
+
+```bash
+git remote add origin https://github.com/your-username/your-repo-name.git
+```
+
+6. Push with **force** to overwrite the remote repo completely:
+
+```bash
+git push --force origin main
+```
+
+---
+
+## What this does:
+
+* Completely deletes your old commit history.
+* Starts fresh with just one commit containing your current files.
+* Removes any large files or unwanted commits from the past.
+
+---
+
+### ⚠️ Important:
+
+* This operation is **destructive** for history. If you collaborate with others, coordinate before doing this.
+* After you force push, anyone else cloning the repo will only get the new history.
+
+---
+
+If you want, I can help you create a script or commands to do this safely step-by-step. Just ask!
